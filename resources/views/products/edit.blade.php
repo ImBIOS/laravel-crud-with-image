@@ -39,10 +39,10 @@
             </div>
             <div class="sm:w-full pr-4 pl-4 sm:w-full pr-4 pl-4 md:w-full pr-4 pl-4">
                 <div class="mb-4">
-                    <strong>Detail:</strong>
-                    <textarea
+                    <strong>Price (in IDR) :</strong>
+                    <input type="text" value="{{ $product->price }}"
                         class="block appearance-none w-full py-1 px-2 mb-1 text-base leading-normal bg-white text-gray-800 border border-gray-200 rounded"
-                        style="height:150px" name="detail" placeholder="Detail">{{ $product->detail }}</textarea>
+                        name="price" placeholder="Price">
                 </div>
             </div>
             <div class="sm:w-full pr-4 pl-4 sm:w-full pr-4 pl-4 md:w-full pr-4 pl-4">

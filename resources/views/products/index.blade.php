@@ -33,7 +33,7 @@
                         Name
                     </th>
                     <th scope="col" class="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider">
-                        Details
+                        Prices
                     </th>
                     <th scope="col" class="relative px-6 py-3">
                         <span class="sr-only">Action</span>
@@ -61,7 +61,7 @@
                             </div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap">
-                            <div class="text-sm text-gray-900">{{ $product->detail }}</div>
+                            <div class="text-sm text-gray-900">IDR {{ number_format($product->price) }}</div>
                         </td>
                         <td class="px-6 py-4 whitespace-nowrap text-white text-right text-sm font-medium">
                             <form action="{{ route('products.destroy', $product->id) }}" method="POST">

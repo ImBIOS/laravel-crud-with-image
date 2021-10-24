@@ -22,8 +22,8 @@
         </div>
         <div class="sm:w-full pr-4 pl-4 sm:w-full pr-4 pl-4 md:w-full pr-4 pl-4">
             <div class="mb-4">
-                <strong>Details:</strong>
-                {{ $product->detail }}
+                <strong>Prices:</strong>
+                IDR {{ number_format($product->price) }}
             </div>
         </div>
         <div class="sm:w-full pr-4 pl-4 sm:w-full pr-4 pl-4 md:w-full pr-4 pl-4">
